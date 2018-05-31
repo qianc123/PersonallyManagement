@@ -5,3 +5,6 @@
 详情请参照PersonnelManagementSystem.ppt文件
 # 使用说明
 该项目基于visual studio 2010IDE开发，用更高级版本调试查看可能会出错，建议先根据数据库文件创建同名数据库，再打开PersonallyManagement\PersonnelManagementSystem\PersonnelManagementSystem\bin\Debug下的PersonnelManagementSystem.exe程序浏览
+# 登录名及密码
+数据库文件中可查看，这里给出测试数据的账号张三: 登录名-2016100,登录密码：2016@01
+或依此进行id+1为其他用户
