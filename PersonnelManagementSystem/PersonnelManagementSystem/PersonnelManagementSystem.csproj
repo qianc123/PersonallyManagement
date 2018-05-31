@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6127A66-82AB-4F1B-99A5-B04630876852}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PersonnelManagementSystem</RootNamespace>
+    <AssemblyName>PersonnelManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\..\..\..\Downloads\任务3相关资源\皮肤组件及文件\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\AttendanceManagement\FrmAttendanceManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\AttendanceManagement\FrmAttendanceManagement.Designer.cs">
+      <DependentUpon>FrmAttendanceManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\AttendanceManagement\FrmAttendanceHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\AttendanceManagement\FrmAttendanceHistory.Designer.cs">
+      <DependentUpon>FrmAttendanceHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\AttendanceManagement\FrmAttendanceImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\AttendanceManagement\FrmAttendanceImport.Designer.cs">
+      <DependentUpon>FrmAttendanceImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\AttendanceManagement\FrmAttendanceSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\AttendanceManagement\FrmAttendanceSetting.Designer.cs">
+      <DependentUpon>FrmAttendanceSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\DepartmentManagement\FrmCreateDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\DepartmentManagement\FrmCreateDepartment.Designer.cs">
+      <DependentUpon>FrmCreateDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\DepartmentManagement\FrmDepartmentManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\DepartmentManagement\FrmDepartmentManagement.Designer.cs">
+      <DependentUpon>FrmDepartmentManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\DepartmentManagement\FrmDepartmentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\DepartmentManagement\FrmDepartmentInformation.Designer.cs">
+      <DependentUpon>FrmDepartmentInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\DepartmentManagement\FrmMoveEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\DepartmentManagement\FrmMoveEmployee.Designer.cs">
+      <DependentUpon>FrmMoveEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\EmployeeManagement\FrmEmployeeManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\EmployeeManagement\FrmEmployeeManagement.Designer.cs">
+      <DependentUpon>FrmEmployeeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\EmployeeManagement\FrmEmployeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\EmployeeManagement\FrmEmployeeAdd.Designer.cs">
+      <DependentUpon>FrmEmployeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\EmployeeManagement\FrmUpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\EmployeeManagement\FrmUpdateEmployee.Designer.cs">
+      <DependentUpon>FrmUpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\EmployeeManagement\FrmUploadPhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\EmployeeManagement\FrmUploadPhoto.Designer.cs">
+      <DependentUpon>FrmUploadPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\FrmDeptSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\FrmDeptSummary.Designer.cs">
+      <DependentUpon>FrmDeptSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\FrmQuerybyEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\FrmQuerybyEmp.Designer.cs">
+      <DependentUpon>FrmQuerybyEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmVacationManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmVacationManagement.Designer.cs">
+      <DependentUpon>FrmVacationManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmRefuseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmRefuseApplication.Designer.cs">
+      <DependentUpon>FrmRefuseApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmLeaveDeptSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmLeaveDeptSummary.Designer.cs">
+      <DependentUpon>FrmLeaveDeptSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmLeaveEmpSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmLeaveEmpSummary.Designer.cs">
+      <DependentUpon>FrmLeaveEmpSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmVacationSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\LeaveManagement\FrmVacationSetting.Designer.cs">
+      <DependentUpon>FrmVacationSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\OvertimeManagement\FrmOvertimeManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\OvertimeManagement\FrmOvertimeManagement.Designer.cs">
+      <DependentUpon>FrmOvertimeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\SalaryManagement\FrmSalaryManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\SalaryManagement\FrmSalaryManagement.Designer.cs">
+      <DependentUpon>FrmSalaryManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\SalaryManagement\FrmSalaryHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\SalaryManagement\FrmSalaryHistory.Designer.cs">
+      <DependentUpon>FrmSalaryHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\SalaryManagement\FrmBaseSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\SalaryManagement\FrmBaseSalary.Designer.cs">
+      <DependentUpon>FrmBaseSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\SecurityManagement\FrmResetPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\SecurityManagement\FrmResetPwd.Designer.cs">
+      <DependentUpon>FrmResetPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\SecurityManagement\FrmSystemEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\SecurityManagement\FrmSystemEvent.Designer.cs">
+      <DependentUpon>FrmSystemEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementFunction\SecurityManagement\FrmSystemEventQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementFunction\SecurityManagement\FrmSystemEventQuery.Designer.cs">
+      <DependentUpon>FrmSystemEventQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="UserInfo\UserInfo.cs" />
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\AttendanceManagement\FrmAttendanceHistory.resx">
+      <DependentUpon>FrmAttendanceHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\AttendanceManagement\FrmAttendanceImport.resx">
+      <DependentUpon>FrmAttendanceImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\AttendanceManagement\FrmAttendanceManagement.resx">
+      <DependentUpon>FrmAttendanceManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\AttendanceManagement\FrmAttendanceSetting.resx">
+      <DependentUpon>FrmAttendanceSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\DepartmentManagement\FrmCreateDepartment.resx">
+      <DependentUpon>FrmCreateDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\DepartmentManagement\FrmDepartmentInformation.resx">
+      <DependentUpon>FrmDepartmentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\DepartmentManagement\FrmDepartmentManagement.resx">
+      <DependentUpon>FrmDepartmentManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\DepartmentManagement\FrmMoveEmployee.resx">
+      <DependentUpon>FrmMoveEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\EmployeeManagement\FrmEmployeeAdd.resx">
+      <DependentUpon>FrmEmployeeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\EmployeeManagement\FrmEmployeeManagement.resx">
+      <DependentUpon>FrmEmployeeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\EmployeeManagement\FrmUpdateEmployee.resx">
+      <DependentUpon>FrmUpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\EmployeeManagement\FrmUploadPhoto.resx">
+      <DependentUpon>FrmUploadPhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\FrmDeptSummary.resx">
+      <DependentUpon>FrmDeptSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\FrmQuerybyEmp.resx">
+      <DependentUpon>FrmQuerybyEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\LeaveManagement\FrmLeaveDeptSummary.resx">
+      <DependentUpon>FrmLeaveDeptSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\LeaveManagement\FrmLeaveEmpSummary.resx">
+      <DependentUpon>FrmLeaveEmpSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\LeaveManagement\FrmRefuseApplication.resx">
+      <DependentUpon>FrmRefuseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\LeaveManagement\FrmVacationManagement.resx">
+      <DependentUpon>FrmVacationManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\LeaveManagement\FrmVacationSetting.resx">
+      <DependentUpon>FrmVacationSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\OvertimeManagement\FrmOvertimeManagement.resx">
+      <DependentUpon>FrmOvertimeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\SalaryManagement\FrmBaseSalary.resx">
+      <DependentUpon>FrmBaseSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\SalaryManagement\FrmSalaryHistory.resx">
+      <DependentUpon>FrmSalaryHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\SalaryManagement\FrmSalaryManagement.resx">
+      <DependentUpon>FrmSalaryManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\SecurityManagement\FrmResetPwd.resx">
+      <DependentUpon>FrmResetPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\SecurityManagement\FrmSystemEvent.resx">
+      <DependentUpon>FrmSystemEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementFunction\SecurityManagement\FrmSystemEventQuery.resx">
+      <DependentUpon>FrmSystemEventQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groups_Folder_48px_1173172_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollars_48px_1171339_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id_card_48px_1202415_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_file_temporary_time_48px_1902_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin_money_gold_48px_510549_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_key_keys_pgp_signature_48px_219_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook_user_48px_13213_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man_personal_user_48px_3662_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_key_keys_pgp_signature_32px_219_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\safe_Shield_48px_556119_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_up_48px_12013_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tables_48px_1082322_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_exit_logout_48px_4136_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_closed_48px_534956_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_32px_27635_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email_32px_1099766_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groups_Folder_32px_1173172_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_48px_26276_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goog_event_calendar_lb_32px_524502_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student_id_48px_1185973_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student_id_32px_1185973_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin_money_gold_32px_510549_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_32px_1095030_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer_blue_32px_1186309_easyicon.net.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
